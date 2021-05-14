@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trippy's Personal Portfolio</title>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goblin+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style type="text/css">
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+}
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: #2b2a26;  
+  font-size: 10rem;
+  margin:0;	
+}
+
+.welcome-section {
+  text-align: center;
+  height: 75vh;
+  background-color: gray;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+}
+#sub-text{
+    font-family:monospace;
+    font-size:1.5rem;
+    margin: 0;
+
+
+}
+.nav-list{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+   list-style: none;
+   font-family:monospace;
+   font-size: 1.25rem;
+    padding: 0;
+
+
+ }
+
+.nav-listsection > a{
+text-decoration: none;
+color: white;
+
+ }
+ #navbar{
+  background-color:black;
+  padding-top:.25rem;
+  padding-bottom:.25rem;
+ }
+.nav-section:hover{
+ 	background-color:white;
+ 	color:black;
+ 	transition-duration: 0.4s;
+ 	border: 2px solid black;
+  padding: 10px 20px;
+ }
+
+ .button {
+ background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 0px;
+  text-decoration: none;
+  display: inline-block;
+
+  margin-top: 2rem;
+  cursor: pointer;
+  max-width:250px;
+  text-align: center;
+   transition-duration: 0.4s;
+   font-family: 'Bebas Neue', cursive;
+   font-weight:400;
+   font-size:1.5rem;
+}
+.button:hover{
+background-color: black;
+  color: white;
+padding: 20px 37px; 
+}
+
+.logo { 
+	float: left;
+    position: relative;
+    width:3rem;
+    height:3rem;
+    left:2rem;
+    top:.5rem;
+}
+#aboutref{
+	color:gray;
+	text-decoration:none;
+  vertical-align: top;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 0.7;
+  } 
+
+#aboutref:hover{
+	color:black;
+  font-weight:600;
+  transition-property: initial;
+  transition-duration: 500ms;
+  cursor: pointer;
+  opacity:1;
+}
+
+ .social-icons
+  {
+    text-align:center;
+     padding-left:0;
+  margin-bottom:0;
+  list-style:none
+  }
+
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:white;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.discord:hover
+{
+  background-color:#7289da
+}
+.social-icons a.behance:hover
+{
+  background-color:#053eff
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.slider-wrapper {
+  font-size: 3rem;
+  color:#313639;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  height: 180px;
+  padding-left:30px;
+  overflow:hidden;
+}
+.slider h1 {
+  color:black;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 8rem 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.slider-text1 {
+
+  animation: slide 3.5s linear infinite;
+}
+@keyframes slide  {
+	10% {margin-top:-100px;}
+	20% {margin-top:-120px;}
+	40% {margin-top:-135px;}
+	40% {margin-top:-140px;}
+	70% {margin-top:-400px;}
+	80% {margin-top:-430px;}
+	85% {margin-top:-450px;}
+	90% {margin-top:-475px;}
+	90% {margin-top:-480px;}
+	90% {margin-top:-480px;}
+   100% {margin-top:-600px;}
+  
+ 
+  
+}
+#footertext {
+	display:flex;
+	justify-content: space-around;
+	font-family:monospace;
+	margin-top: 10px;
+
+}
+
+</style>
+<body>
+   <!-- START OF NAV -->
+   <nav id="navbar" class="nav">
+      <div>
+         <a href="index.html" class="logohome">
+         <img class="logo" src="moe-hidri.png" alt="Trippy Logo">
+         </a>
+      </div>
+      <ul class="nav-list">
+         <li class="nav-listsection">
+            <a class="nav-section"href="#welcome-section">Who Am I?</a>
+         </li>
+         <li class="nav-listsection">
+            <a class="nav-section" href="#Shop">Shop</a>
+         </li>
+         <li class="nav-listsection">
+            <a class="nav-section" href="#ContactMe">Contact Me</a>
+         </li>
+      </ul>
+   </nav>
+   <!--- END OF NAV --->
+   <!-- START WELCOME SECTION -->  
+   <section id="welcome-section" class="welcome-section">
+      <div class="slider-wrapper">
+      Hi I'm
+      <div class="slider">
+         <h1 class="slider-text1">Mohamed</h1>
+         <h1 class="slider-text2">AKA &#x27&#x27Trippy&#x27&#x27</h1>         
+         
+            
+        
+   </section>
+
+   <!-- END WELCOME SECTION -->
+   <!-- START FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="behance" href="#"><i class="fab fa-behance"></i></a></li>
+              <li><a class="discord" href="#"><i class="fab fa-discord"></i></a></li>   
+            </ul>
+            <span id="footertext">&copy; Designed By Trippy</span> 
+          </div>
+        </div>
+      </div>
+</footer>   <!-- END FOOTER -->
+</body>
+</html>
